@@ -114,6 +114,7 @@ ul li {
   overflow: hidden;
   max-width: 200px;
   transition: transform 0.4s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 20px rgba(255, 0, 128, 0.3);
 }
 
 .depoimento:hover {
