@@ -76,7 +76,7 @@ header p {
 }
 
 section {
-  padding: 40px 20px;
+  padding: 20px 20px;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -85,6 +85,48 @@ h2 {
   color: #ff0080;
   margin-bottom: 20px;
   position: relative;
+}
+
+.galeria {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.galeria h2 {
+  color: #ff0080;
+  margin-bottom: 10px;
+}
+
+.galeria p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.galeria-container {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.galeria-container img,
+.galeria-container video {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-container img:hover,
+.galeria-container video:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 0, 128, 0.4);
 }
 
 .fade-in-section {
@@ -126,6 +168,47 @@ ul li {
   width: 100%;
   display: block;
   border-radius: 10px;
+}
+
+#galeria-antes-depois{
+  height: 350px;
+}
+
+.galeria {
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 300px;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 20px rgba(255, 0, 128, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  background-color: #f5eaee;
+}
+
+.galeria img,
+.galeria video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px 12px 0 0;
+  object-fit: cover;
+}
+
+.legenda {
+  padding: 10px 8px;
+  background-color: #fce4ec;
+  color: #8e2c39;
+  font-weight: bold;
+  font-size: 0.95em;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #ffc0cb;
+}
+
+.paragrafo {
+  padding-bottom: 15px;
 }
 
 footer {
