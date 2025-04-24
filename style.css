@@ -1,79 +1,108 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  body {
-    background: #f5eaee;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  header {
-    background-image: url('imgs_LPN/lash.jpeg');
-    text-align: center;
-    padding: 60px 20px;
-  }
-  
-  header h1 {
-    font-size: 2.5em;
-    color: #ff0080;
-  }
-  
-  header p {
-    font-size: 1.2em;
-    margin: 10px 0 20px;
-    font-weight: bold;
-    color: black;
-  }
-  
-  .btn, .btn-outline {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  .btn {
-    background: #ff0080;
-    color: white;
-  }
-  
-  .btn:hover {
-    background: #8e2c39;
-  }
-  
-  .btn-outline {
-    border: 2px solid #ff0080;
-    color: #ff0080;
-  }
-  
-  .btn-outline:hover {
-    background: #ff0080;
-    color: white;
-  }
-  
-  section {
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  h2 {
-    color: #ff0080;
-    margin-bottom: 20px;
-  }
-  
-  ul li {
-    margin-bottom: 10px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
 
-  .depoimentos-container {
+body {
+  background: #f5eaee;
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-image: url('/imgs_LP/lash.jpeg');
+  text-align: center;
+  padding: 80px 20px;
+  color: white;
+  animation: fadeInDown 2s ease;
+}
+
+header .typewriter {
+  font-size: 2em;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3s steps(40, end) forwards;
+}
+
+header .highlight {
+  font-size: 2.5em;
+  color: #ff0080;
+  margin-top: 10px;
+  animation: fadeIn 4s ease-in-out;
+}
+
+header p {
+  font-size: 1.2em;
+  margin: 10px 0 20px;
+  font-weight: bold;
+  color: #ff0080;
+}
+
+.btn, .btn-outline {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn {
+  background: linear-gradient(45deg, #ff0080, #ff6f91);
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 0, 128, 0.4);
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 0, 128, 0.5);
+}
+
+.btn-outline {
+  border: 2px solid #ff0080;
+  color: #ff0080;
+}
+
+.btn-outline:hover {
+  background: #ff0080;
+  color: white;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #ff0080;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-section.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.depoimentos-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -84,32 +113,39 @@
   border-radius: 10px;
   overflow: hidden;
   max-width: 200px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
 }
 
 .depoimento:hover {
-  transform: scale(1.05);
+  transform: scale(1.07);
+  box-shadow: 0 10px 20px rgba(255, 0, 128, 0.3);
 }
 
 .depoimento img {
   width: 100%;
-  height: auto;
   display: block;
   border-radius: 10px;
 }
-  
-  blockquote {
-    border-left: 5px solid #b23a48;
-    padding-left: 15px;
-    margin-bottom: 20px;
-    color: #555;
-    font-style: italic;
+
+footer {
+  background: #f1d3e0;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
   }
-  
-  footer {
-    background: #f1d3e0;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
