@@ -21,7 +21,7 @@ header {
 }
 
 header .typewriter {
-  font-size: 2em;
+  font-size: 25px;
   border-right: 2px solid white;
   white-space: nowrap;
   overflow: hidden;
