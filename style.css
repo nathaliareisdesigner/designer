@@ -22,6 +22,7 @@ header {
 }
 
 header .typewriter {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   font-size: 25px;
   border-right: 2px solid white;
   white-space: nowrap;
@@ -31,6 +32,7 @@ header .typewriter {
 }
 
 header .highlight {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   font-size: 2.5em;
   color: #ff0080;
   margin-top: 10px;
@@ -38,6 +40,7 @@ header .highlight {
 }
 
 header p {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   font-size: 1.2em;
   margin: 10px 0 20px;
   font-weight: bold;
@@ -106,9 +109,6 @@ h2 {
 }
 
 .galeria-container {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 20px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
