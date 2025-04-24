@@ -1,4 +1,3 @@
-// Efeito de fade-in com scroll
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
