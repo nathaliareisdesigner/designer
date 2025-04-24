@@ -18,6 +18,7 @@ header {
   padding: 80px 20px;
   color: white;
   animation: fadeInDown 2s ease;
+  height: 370px ;
 }
 
 header .typewriter {
