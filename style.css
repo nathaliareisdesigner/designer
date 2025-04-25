@@ -10,7 +10,12 @@ body {
   color: #333;
   line-height: 1.6;
   scroll-behavior: smooth;
+}
+
+html, body{
+  height: 100%;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 header {
