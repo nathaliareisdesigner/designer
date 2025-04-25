@@ -6,6 +6,10 @@
   max-width: 100%;
 }
 
+img, video {
+  max-width: 100%;
+}
+
 body {
   background: #f5eaee;
   color: #333;
@@ -155,6 +159,8 @@ ul li {
 }
 
 .depoimentos-container {
+  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
