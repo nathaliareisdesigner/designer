@@ -9,14 +9,14 @@
 </head>
 <body>
   <header class="fade-in">
-    <h1 class="typewriter">Lash Designer | Sombracelhas</h1>
+    <h1 class="typewriter">Lash Designer | Sobrancelhas</h1>
     <h1 class="highlight">Nathalia Reis</h1>
     <p>Realço o seu olhar e elevo sua autoestima 🦋</p>
     <a href="#agendamento" class="btn">Agende Agora</a>
   </header>
 
   <section class="sobre fade-in-section">
-    <h2>O que você vai encontrar</h2>
+    <h2 class="titulo1">O que você vai encontrar</h2>
     <ul>
       <li>Extensão fio a fio, volume russo e híbrido</li>
       <li>Atendimento personalizado</li>
@@ -28,7 +28,7 @@
   </section>
 
   <section>
-    <h2>Depoimentos</h2>
+    <h2 class="titulo1" id="depoimentos-titulo">Depoimentos</h2>
     <div class="depoimentos-container">
       <div class="depoimento"><img src="imgs_lpnr/imagem1.jpg" alt="Imagem 1" /></div>
       <div class="depoimento"><img src="imgs_lpnr/imagem2.jpg" alt="Imagem 2" /></div>
@@ -40,32 +40,31 @@
   </section>
 
   <section>
-    <h2 class="titulo-galeria">Galeria da Nathalia</h2>
+    <h2 class="titulo">Galeria da Nathalia</h2>
     <p class="paragrafo">Conheça mais do meu espaço e do meu trabalho 💕</p>
     <div class="galeria-container">
       <div class="galeria">
-        <img src="imgs_lpnr/imagem7.jpg" alt="Nathalia" />
-        <div class="legenda">A própria Nathalia</div>
-      </div>
-
-      <div class="galeria">
-        <img src="imgs_lpnr/imagem13.jpg" alt="Cliente feliz" />
-        <div class="legenda">Profissional Designer</div>
-      </div>
-
-      <div class="galeria">
-        <img src="imgs_lpnr/imagem12.jpg" alt="Antes e depois" id="galeria-antes-depois"/>
+        <video controls poster="imgs_lpnr/imagem14.jpg">
+          <source src="imgs_lpnr/cilios.mp4" type="video/mp4" />
+          Seu navegador não suporta vídeo.
+        </video>
         <div class="legenda">Antes e depois de cliente</div>
       </div>
     
       <div class="galeria">
-        <img src="imgs_lpnr/imagem10.jpg" alt="Aplicação de cílios" />
+        <video controls poster="imgs_lpnr/imagem16.jpg">
+          <source src="imgs_lpnr/cliente.mp4" type="video/mp4" />
+          Seu navegador não suporta vídeo.
+        </video>
         <div class="legenda">Aplicação de cílios</div>
       </div>
     
       <div class="galeria">
-        <img src="imgs_lpnr/imagem8.jpg" alt="Resultado sombrancelha" />
-        <div class="legenda">Resultado sombrancelha</div>
+        <video controls poster="imgs_lpnr/imagem15.jpg">
+          <source src="imgs_lpnr/sobrancelha.mp4" type="video/mp4" />
+          Seu navegador não suporta vídeo.
+        </video>
+        <div class="legenda">Resultado sobrancelha</div>
       </div>
     
       <div class="galeria">
@@ -91,19 +90,53 @@
     </div>
   </section>    
 
+  <section>
+    <h2 class="titulo">Catalogo de modelos</h2>
+    <div class="catalogo-container">
+      <div class="catalogo">
+        <img src="modelos/volume brasileiro power.jpg" alt="Volume Brasileiro" id="galeria-antes-depois"/>
+        <div class="legenda-catalogo">Volume Brasileiro <br/> R$ 110</div>
+      </div>
+    
+      <div class="catalogo">
+        <img src="modelos/volume egipcio power.jpg" alt="Volume Egípcio" />
+        <div class="legenda-catalogo">Volume Egípcio <br/> R$ 110</div>
+      </div>
+    
+      <div class="catalogo">
+        <img src="modelos/volume 4d.jpg" alt="Volume 4D" />
+        <div class="legenda-catalogo">Volume 4D <br/> 110</div>
+      </div>
+    
+      <div class="catalogo">
+        <img src="modelos/volumr 5d.jpg" alt="Volume 5D" />
+        <div class="legenda-catalogo">Volume 5D <br/> R$ 120</div>
+      </div>
+
+      <div class="catalogo">
+        <img src="modelos/sobrancelha com henna.jpg" alt="Design de sobrancelha com henna" />
+        <div class="legenda-catalogo">Design de sobrancelha <br/> com Henna <br/> R$ 40</div>
+      </div>
+
+      <div class="catalogo">
+        <img src="modelos/sobrancelha simples.jpg" alt="Design de sobrancelha simples" />
+        <div class="legenda-catalogo">Design de sobrancelha <br/> Simples <br/> R$ 30</div>
+      </div>
+    </div>
+  </section>
+
   <section class="pacotes fade-in-section">
-    <h2>Pacotes e Promoções</h2>
+    <h2 class="titulo">Manuntenções</h2>
     <ul>
-      <li><strong>Fio a fio clássico:</strong> R$ 100</li>
-      <li><strong>Volume russo:</strong> R$ 120</li>
-      <li><strong>Manutenção:</strong> R$ 60</li>
-      <li><strong>Sombrancelha:</strong> R$ 35</li>
-      <li><strong>Pacote fidelidade:</strong> Consulte condições</li>
+      <li><strong>Volume Brasileiro:</strong> R$ 80</li>
+      <li><strong>Volume Egípcio:</strong> R$ 80</li>
+      <li><strong>Volume 4D:</strong> R$ 80</li>
+      <li><strong>Volume 5D:</strong> R$ 90</li>
     </ul>
   </section>
 
   <section class="localizacao fade-in-section">
-    <h2>Localização</h2>
+    <h2 class="titulo1">Localização</h2>
     <p>Rua Coronel Salatiel Vaz, 68 - Industrial, Contagem - MG</p>
     <a href="https://g.co/kgs/9Z8hN8G" target="_blank" class="btn-outline">Ver no Google Maps</a>
     <div class="map-container">
@@ -119,7 +152,7 @@
     </div>
   </section>
   <section id="agendamento" class="agendamento fade-in-section">
-    <h2>Agende seu horário</h2>
+    <h2 class="titulo1">Agende seu horário</h2>
     <p>Atendimento com hora marcada. Garanta sua vaga!</p>
     <a href="http://wa.me/5531975201212" target="_blank" class="btn-outline">Agendar pelo WhatsApp</a>
     <a href="https://instagram.com/nathalia_reisdesigner" target="_blank" class="btn-outline">Instagram</a>
