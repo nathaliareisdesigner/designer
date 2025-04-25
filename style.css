@@ -10,6 +10,7 @@ body {
   color: #333;
   line-height: 1.6;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 header {
@@ -18,7 +19,7 @@ header {
   padding: 80px 20px;
   color: white;
   animation: fadeInDown 2s ease;
-  height: 370px ;
+  height: 390px;
 }
 
 header .typewriter {
