@@ -9,4 +9,9 @@ const observer = new IntersectionObserver((entries) => {
   document.querySelectorAll('.fade-in-section').forEach(el => {
     observer.observe(el);
   });
-  
+
+window.addEventListener('load', function() {
+    if (window.location.hash === '#agendamento') {
+      history.replaceState(null, null, window.location.pathname);
+    }
+  });
