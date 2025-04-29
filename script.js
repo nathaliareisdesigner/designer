@@ -10,8 +10,16 @@ const observer = new IntersectionObserver((entries) => {
     observer.observe(el);
   });
 
-window.addEventListener('load', function() {
-    if (window.location.hash === '#agendamento') {
+document.querySelectorAll('a[href="#agendamento"]').forEach(link => {
+    link.addEventListener('click', function(event) {
+      event.preventDefault(); // Impede o comportamento padrão (não deixa o navegador adicionar o #)
+  
+      const target = document.querySelector('#agendamento');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' }); // Scroll suave até o elemento
+      }
+  
+      // Remove o hash da URL
       history.replaceState(null, null, window.location.pathname);
-    }
+    });
   });
